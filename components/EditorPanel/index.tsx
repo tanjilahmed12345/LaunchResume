@@ -3,14 +3,20 @@
 import { useSelector, useDispatch } from "react-redux"
 import { type RootState, updateSection } from "@/lib/store"
 import { Edit3 } from "lucide-react"
+import PersonalEditor from "../editors/PersonalEditor"
+import SummaryEditor from "../editors/SummaryEditor"
+import ListItemEditor from "../editors/ListItemEditor"
+import SkillsEditor from "../editors/SkillsEditor"
+import SocialEditor from "../editors/SocialEditor"
+import SimpleTextEditor from "../editors/SimpleTextEditor"
 
 // Import all editors
-import PersonalEditor from "@/components/Editors/PersonalEditor"
-import SummaryEditor from "@/components/Editors/SummaryEditor"
-import ListItemEditor from "@/components/Editors/ListItemEditor"
-import SkillsEditor from "@/components/Editors/SkillsEditor"
-import SocialEditor from "@/components/Editors/SocialEditor"
-import SimpleTextEditor from "@/components/Editors/SimpleTextEditor"
+// import PersonalEditor from "@/components/Editors/PersonalEditor"
+// import SummaryEditor from "@/components/Editors/SummaryEditor"
+// import ListItemEditor from "@/components/Editors/ListItemEditor"
+// import SkillsEditor from "@/components/Editors/SkillsEditor"
+// import SocialEditor from "@/components/Editors/SocialEditor"
+// import SimpleTextEditor from "@/components/Editors/SimpleTextEditor"
 
 interface EditorPanelProps {
   activeSection: string
