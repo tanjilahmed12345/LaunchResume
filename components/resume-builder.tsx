@@ -2,13 +2,15 @@
 
 import { useState } from "react"
 import TemplateSelector from "./template-selector"
-import SectionManager from "./section-manager"
-import EditorPanel from "./editor-panel"
+// import SectionManager from "./section-manager"
+// import EditorPanel from "./editor-panel"
 import ResumePreview from "./resume-preview"
 import ExportBar from "./export-bar"
 import ThemeCustomizer from "./theme-customizer"
 import { Button } from "@/components/ui/button"
 import { Palette, Layout, Sparkles } from "lucide-react"
+import EditorPanel from "./EditorPanel"
+import SectionManager from "./SectionManager"
 
 export default function ResumeBuilder() {
   const [showTemplates, setShowTemplates] = useState(false)

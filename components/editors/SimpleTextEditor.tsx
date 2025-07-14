@@ -1,6 +1,6 @@
 "use client"
 
-import FormField from "@/components/Common/FormField"
+import FormField from "@/components/common/FormField"
 
 interface SimpleTextEditorProps {
   content: any

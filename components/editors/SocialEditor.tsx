@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import FormField from "@/components/Common/FormField"
+import FormField from "@/components/common/FormField"
 import ActionButton from "@/components/Common/ActionButton"
 import { Plus, Trash2, Edit3 } from "lucide-react"
 import { Label } from "@/components/ui/label"

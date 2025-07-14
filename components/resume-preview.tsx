@@ -2,15 +2,16 @@ import { useSelector } from "react-redux"
 import type { RootState } from "@/lib/store"
 
 // Import all section components
-import PersonalSection from "./Preview/PersonalSection"
-import ExperienceSection from "./Preview/ExperienceSection"
-import SkillsSection from "./Preview/SkillsSection"
-import GenericListSection from "./Preview/GenericListSection"
-import SimpleTextSection from "./Preview/SimpleTextSection"
+import PersonalSection from "./preview/PersonalSection"
+import ExperienceSection from "./preview/ExperienceSection"
+import SkillsSection from "./preview/SkillsSection"
+import GenericListSection from "./preview/GenericListSection"
+import SimpleTextSection from "./preview/SimpleTextSection"
 import SectionHeader from "./Preview/SectionHeader"
 import SectionCard from "./Common/SectionCard"
 import { socialPlatformIcons } from "@/lib/SectionConfig"
 import { ExternalLink } from "lucide-react"
+// import SectionHeader from "./preview/SectionHeader"
 
 export default function ResumePreview() {
   const resume = useSelector((state: RootState) => state.resume)
