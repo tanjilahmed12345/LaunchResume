@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux"
 import { Draggable } from "@hello-pangea/dnd"
 import { toggleSectionVisibility, removeSection } from "@/lib/store"
 import { sectionIcons, sectionLabels } from "@/lib/SectionConfig"
-import ActionButton from "@/components/Common/ActionButton"
+import ActionButton from "@/components/common/ActionButton"
 import { GripVertical, Eye, EyeOff, Trash2 } from "lucide-react"
 import type { ResumeSection } from "@/lib/store"
 

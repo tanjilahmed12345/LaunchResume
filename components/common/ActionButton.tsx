@@ -6,7 +6,8 @@ import type { LucideIcon } from "lucide-react"
 
 interface ActionButtonProps {
   icon: LucideIcon
-  onClick: () => void
+  // onClick: () => void
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
   variant?: "default" | "ghost" | "outline"
   size?: "sm" | "default"
   className?: string

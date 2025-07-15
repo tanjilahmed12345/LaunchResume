@@ -2,12 +2,13 @@
 
 import type React from "react"
 import { useDispatch } from "react-redux"
-import { Draggable } from "react-beautiful-dnd"
+import { Draggable } from  "@hello-pangea/dnd"
 import { toggleSectionVisibility, removeSection } from "@/lib/store"
 import { sectionIcons, sectionLabels } from "@/lib/SectionConfig"
 import ActionButton from "@/components/common/ActionButton"
 import { GripVertical, Eye, EyeOff, Trash2 } from "lucide-react"
 import type { ResumeSection } from "@/lib/store"
+// import ActionButton from "../Common/ActionButton"
 
 interface SectionItemProps {
   section: ResumeSection

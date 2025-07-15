@@ -1,7 +1,7 @@
 "use client"
 
 import { useSelector, useDispatch } from "react-redux"
-import { DragDropContext, Droppable } from "react-beautiful-dnd"
+import { DragDropContext, Droppable } from "@hello-pangea/dnd"
 import { type RootState, reorderSections } from "@/lib/store"
 import SectionItem from "./SectionItem"
 

@@ -6,6 +6,19 @@ import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 
+export const getButtonClass = (
+  variant: keyof typeof buttonVariants.variants = "default",
+  size: keyof typeof buttonVariants.sizes = "default",
+  className?: string
+) => {
+  return cn(
+    buttonVariants.base,
+    buttonVariants.variants[variant],
+    buttonVariants.sizes[size],
+    className
+  );
+};
+
 const AlertDialog = AlertDialogPrimitive.Root
 
 const AlertDialogTrigger = AlertDialogPrimitive.Trigger
@@ -104,12 +117,14 @@ const AlertDialogAction = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AlertDialogPrimitive.Action
     ref={ref}
-    className={cn(buttonVariants(), className)}
+    className={getButtonClass("default", "default", className)}
     {...props}
   />
-))
+));
+
 AlertDialogAction.displayName = AlertDialogPrimitive.Action.displayName
 
+// Fixed AlertDialogCancel using buttonVariants
 const AlertDialogCancel = React.forwardRef<
   React.ElementRef<typeof AlertDialogPrimitive.Cancel>,
   React.ComponentPropsWithoutRef<typeof AlertDialogPrimitive.Cancel>
@@ -117,7 +132,9 @@ const AlertDialogCancel = React.forwardRef<
   <AlertDialogPrimitive.Cancel
     ref={ref}
     className={cn(
-      buttonVariants({ variant: "outline" }),
+      buttonVariants.base,
+      buttonVariants.variants.outline,
+      buttonVariants.sizes.default,
       "mt-2 sm:mt-0",
       className
     )}

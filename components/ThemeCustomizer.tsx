@@ -3,7 +3,7 @@
 import { useDispatch, useSelector } from "react-redux"
 import { type RootState, updateTheme } from "@/lib/store"
 import { Button } from "@/components/ui/button"
-import ColorPicker from "@/components/Common/ColorPicker"
+import ColorPicker from "@/components/common/ColorPicker"
 import { X } from "lucide-react"
 
 const presetColors = [

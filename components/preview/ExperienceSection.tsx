@@ -1,7 +1,10 @@
 import { useSelector } from "react-redux"
 import type { RootState } from "@/lib/store"
 import SectionHeader from "./SectionHeader"
-import SectionCard from "@/components/Common/SectionCard"
+import SectionCard from "@/components/common/SectionCard"
+
+// import SectionCard from "../common/SectionCard"
+// import SectionCard from "@/components/Common/SectionCard"
 
 interface ExperienceSectionProps {
   content: any[]

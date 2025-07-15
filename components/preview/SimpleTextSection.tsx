@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux"
 import type { RootState } from "@/lib/store"
 import SectionHeader from "./SectionHeader"
-import SectionCard from "@/components/Common/SectionCard"
+import SectionCard from "@/components/common/SectionCard"
 
 interface SimpleTextSectionProps {
   title: string
