@@ -7,10 +7,11 @@ import ExperienceSection from "./preview/ExperienceSection"
 import SkillsSection from "./preview/SkillsSection"
 import GenericListSection from "./preview/GenericListSection"
 import SimpleTextSection from "./preview/SimpleTextSection"
-import SectionHeader from "./Preview/SectionHeader"
-import SectionCard from "./Common/SectionCard"
+// import SectionHeader from "./Preview/SectionHeader"
+import SectionCard from "./common/SectionCard"
 import { socialPlatformIcons } from "@/lib/SectionConfig"
 import { ExternalLink } from "lucide-react"
+import SectionHeader from "./preview/SectionHeader"
 // import SectionHeader from "./preview/SectionHeader"
 
 export default function ResumePreview() {
